@@ -1,5 +1,7 @@
 # 🍒 Wisienka - Patisserie
 
+> **[🌐 Zobacz stronę na żywo](https://cukierniawisienka.netlify.app/)**
+
 Nowoczesna, responsywna strona internetowa dla cukierni **Wisienka**, łącząca elegancki interfejs z autorskimi ilustracjami i elementami graficznymi oraz funkcjonalny proces składania zamówienia.
 
 Projekt został wykonany w **React** z wykorzystaniem **Vite** i **React Router**. Aplikacja pozwala użytkownikowi przejść od przeglądania oferty, przez wybór produktów i koszyk, aż do złożenia zamówienia.
@@ -67,5 +69,7 @@ Projekt powstał jako praktyczne połączenie **tworzenia aplikacji w React**, p
 ---
 
 **Autor:** Agata Tryksza
+
 **Projekt:** Wisienka — Patisserie
+
 **Charakter projektu:** portfolio / projekt edukacyjny
