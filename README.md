@@ -1,12 +1,31 @@
-# React + Vite
+# 🍒 Wisienka — Cukiernia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nowoczesny, responsywny **szablon strony internetowej dla cukierni**, stworzony w React.
 
-Currently, two official plugins are available:
+Projekt przedstawia stronę cukierni „Wisienka” z sekcją Hero oraz kafelkami prowadzącymi do poszczególnych kategorii oferty — tortów, ciast i deserów.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Obecna wersja skupia się na warstwie **frontendowej** i stanowi bazę do dalszego rozwoju projektu o backend, bazę danych oraz funkcjonalności związane z zarządzaniem ofertą i zamówieniami.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologie
+
+### Frontend
+
+* **React**
+* **React Router**
+* **JavaScript**
+* **CSS3**
+* **Vite**
+
+### Backend
+
+Backend jest planowany jako kolejny etap rozwoju projektu i będzie odpowiedzialny między innymi za obsługę danych oraz zarządzanie ofertą.
+
+## 🎯 Cel projektu
+
+Aktualna wersja stanowi **frontendową bazę projektu**. Kafelki kategorii są przygotowane jako elementy nawigacyjne, a kolejne etapy rozwoju obejmują między innymi podłączenie danych produktów oraz stworzenie zaplecza backendowego.
+
+
+## 📄 Licencja
+
+Projekt wykonany w celach edukacyjnych i portfolio.
