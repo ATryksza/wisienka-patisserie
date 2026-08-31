@@ -225,13 +225,9 @@
   width: 30px;
   height: 30px;
 
-  border: 0;
-
   background: transparent;
 
   color: var(--color-primary);
-
-  cursor: pointer;
 
   font-size: 18px;
 }
@@ -275,14 +271,11 @@
 }
 
 .calendar-days button {
-  border: 0;
   border-radius: 50%;
 
   background: transparent;
 
   color: var(--color-text);
-
-  cursor: pointer;
 
   font: inherit;
   font-size: 13px;
@@ -318,15 +311,9 @@
 
   padding: 14px 24px;
 
-  border: 0;
-
   background: var(--color-primary);
 
   color: var(--color-white);
-
-  cursor: pointer;
-
-  font: inherit;
 
   font-size: 13px;
   font-weight: 600;
@@ -380,10 +367,7 @@
 
   color: var(--color-primary);
 
-  font-family: Georgia, serif;
-
   font-size: 34px;
-  font-weight: 400;
 }
 
 .summary-items {

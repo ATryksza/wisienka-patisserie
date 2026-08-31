@@ -1,12 +1,28 @@
-import React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 import lupa from "../images/lupa.png";
 import sklep from "../images/sklep.png";
+
 import "./Navbar.css";
 
-const Navbar = ({ searchOpen, cartItems, setSearchOpen, setCartOpen }) => {
+const navLinks = [
+  { to: "/produkty", label: "Wypieki" },
+  { to: "/kontakt", label: "Kontakt" },
+];
+
+const IconButton = ({ onClick, image, alt, children }) => (
+  <button className="navbar-item" type="button" onClick={onClick}>
+    <img width="24" height="24" src={image} alt={alt} />
+    {children}
+  </button>
+);
+
+const Navbar = ({ cartItems, setSearchOpen, setCartOpen }) => {
   const [toggle, setToggle] = useState(false);
+
+  const navLinkClass = ({ isActive }) =>
+    `navbar-item navbar-link ${isActive ? "active" : ""}`;
 
   return (
     <nav className="navbar">
@@ -14,8 +30,8 @@ const Navbar = ({ searchOpen, cartItems, setSearchOpen, setCartOpen }) => {
         <button
           className={`mobile-menu-button ${toggle ? "open" : ""}`}
           type="button"
-          onClick={() => setToggle(!toggle)}
-          aria-label="Otwórz menu"
+          onClick={() => setToggle((prev) => !prev)}
+          aria-label={toggle ? "Zamknij menu" : "Otwórz menu"}
           aria-expanded={toggle}
         >
           <span></span>
@@ -23,59 +39,55 @@ const Navbar = ({ searchOpen, cartItems, setSearchOpen, setCartOpen }) => {
           <span></span>
         </button>
 
-        <Link to="/produkty" className="navbar-item navbar-link">
-          Wypieki
-        </Link>
-
-        <Link to="/kontakt" className="navbar-item navbar-link">
-          Kontakt
-        </Link>
+        {navLinks.map((link) => (
+        <NavLink
+            key={link.to}
+            to={link.to}
+            className={navLinkClass}
+            end
+        >
+            {link.label}
+        </NavLink>
+        ))}
 
         {toggle && (
           <div className="mobile-menu">
-            <Link
-              to="/produkty"
-              className="navbar-item navbar-link"
-              onClick={() => setToggle(false)}
-            >
-              Wypieki
-            </Link>
-
-            <Link
-              to="/kontakt"
-              className="navbar-item navbar-link"
-              onClick={() => setToggle(false)}
-            >
-              Kontakt
-            </Link>
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={navLinkClass}
+                end
+                onClick={() => setToggle(false)}
+              >
+                {link.label}
+              </NavLink>
+            ))}
           </div>
         )}
       </div>
 
       <div className="nav-right-area">
-        <button className="navbar-item" onClick={() => setSearchOpen(true)}>
-          <img
-            width="24"
-            height="24"
-            src={lupa}
-            alt="Ikona wyszukiwania"
-            className="loop-image"
-          />
-        </button>
-        <button className="navbar-item" onClick={() => setCartOpen(true)}>
-          <img
-            width="24"
-            height="24"
-            src={sklep}
-            alt="Ikona koszyka"
-            className="shop-image"
-          />
+        <IconButton
+          onClick={() => setSearchOpen(true)}
+          image={lupa}
+          alt="Otwórz wyszukiwarkę"
+        />
+
+        <IconButton
+          onClick={() => setCartOpen(true)}
+          image={sklep}
+          alt="Otwórz koszyk"
+        >
           {cartItems.length > 0 && (
             <span className="cart-count">
-              {cartItems.reduce((total, item) => total + item.quantity, 0)}
+              {cartItems.reduce(
+                (total, item) => total + item.quantity,
+                0
+              )}
             </span>
           )}
-        </button>
+        </IconButton>
       </div>
     </nav>
   );

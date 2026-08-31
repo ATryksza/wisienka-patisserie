@@ -19,13 +19,13 @@ const Contact = () => {
         <section className="contact-welcome">
           <div className="contact-welcome-inner">
             <div className="contact-welcome-image">
-              <img src={logo} alt="Wnętrze cukierni Wisienka" />
+              <img src={logo} width="600" height="615" alt="Wnętrze cukierni Wisienka" />
             </div>
             <div className="contact-welcome-content" aria-hidden="true">
               <p className="eyebrow">Jesteśmy do Twojej dyspozycji</p>
 
               <h3>
-                Wpadnij do nas na coś słodkiego lub skontaktuj się z nami.
+                Wpadnij na coś słodkiego lub skontaktuj się z nami.
               </h3>
 
               <p>

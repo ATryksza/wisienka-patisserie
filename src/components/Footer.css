@@ -56,7 +56,6 @@
   color: var(--color-bg);
   font-size: 14px;
   line-height: 1.6;
-  text-decoration: none;
 }
 
 .footer-column a:hover {
