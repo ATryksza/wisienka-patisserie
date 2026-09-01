@@ -1,43 +1,43 @@
-# 🍒 Wisienka - Patisserie
+# 🍒 Wisienka — Patisserie
 
-> **[🌐 Zobacz stronę na żywo](https://cukierniawisienka.netlify.app/)**
+> **[🌐 View Live Website](https://cukierniawisienka.netlify.app/)**
 
-Nowoczesna, responsywna strona internetowa dla cukierni **Wisienka**, łącząca elegancki interfejs z autorskimi ilustracjami i elementami graficznymi oraz funkcjonalny proces składania zamówienia.
+A modern, responsive website for **Wisienka Patisserie**, combining an elegant interface with original illustrations, custom graphics, and a functional ordering process.
 
-Projekt został wykonany w **React** z wykorzystaniem **Vite** i **React Router**. Aplikacja pozwala użytkownikowi przejść od przeglądania oferty, przez wybór produktów i koszyk, aż do złożenia zamówienia.
+The project was built with **React**, using **Vite** and **React Router**. Users can browse the product selection, search and filter products, add items to their cart, and proceed through the ordering process.
 
-## ✨ Funkcjonalności
+## ✨ Features
 
-* oferta produktów z wyszukiwaniem i filtrowaniem,
-* koszyk i proces składania zamówienia,
-* płynna animacja logo podczas scrollowania,
-* responsywny layout dopasowany do różnych urządzeń,
-* sekcja kontaktowa.
+* product catalogue with search and filtering,
+* shopping cart and ordering process,
+* smooth logo animation on scroll,
+* responsive layout optimized for different devices,
+* contact section.
 
-## 🎨 Design & ilustracje
+## 🎨 Design & Illustrations
 
-Projekt obejmuje również autorską oprawę wizualną.
+The project also includes original visual assets created specifically for the website.
 
-**Logo Wisienki oraz wykorzystane w interfejsie ikonki i elementy graficzne zostały przeze mnie narysowane na tablecie graficznym.**
+**The Wisienka logo, icons, and other graphic elements used throughout the interface were hand-drawn by me using a graphics tablet.**
 
-Warstwa wizualna została zaprojektowana jako integralna część projektu, tak aby identyfikacja cukierni była spójna z wyglądem strony i doświadczeniem użytkownika.
+The visual identity was designed as an integral part of the project, ensuring consistency between the patisserie branding, website design, and overall user experience.
 
-## 🧩 Struktura projektu
+## 🧩 Project Structure
 
-Projekt został podzielony na komponenty wielokrotnego użytku, osobne strony oraz moduły przechowujące dane.
+The project is organized into reusable components, separate pages, and modules containing application data.
 
 ```text
 src/
-├── components/     # komponenty UI
-├── constants/      # stałe
-├── data/           # dane produktów i kontaktu
-├── images/         # grafiki i autorskie assety
-├── pages/          # główne strony aplikacji
-├── App.jsx         # konfiguracja aplikacji i routingu
-└── main.jsx        
+├── components/     # UI components
+├── constants/      # constants
+├── data/           # product and contact data
+├── images/         # graphics and original assets
+├── pages/          # main application pages
+├── App.jsx         # application and routing configuration
+└── main.jsx
 ```
 
-## 🛠️ Technologie
+## 🛠️ Technologies
 
 * React 19
 * React Router
@@ -46,30 +46,29 @@ src/
 * Vite
 * ESLint
 
-## 🧞 Dostępne skrypty
+## 🧞 Available Scripts
 
-| Polecenie         | Opis                                              |
-| ----------------- | ------------------------------------------------- |
-| `npm install`     | Instalacja zależności projektu                    |
-| `npm run dev`     | Uruchomienie serwera deweloperskiego              |
-| `npm run build`   | Utworzenie wersji produkcyjnej w katalogu `dist/` |
-| `npm run preview` | Podgląd wersji produkcyjnej lokalnie              |
+| Command           | Description                                           |
+| ----------------- | ----------------------------------------------------- |
+| `npm install`     | Install project dependencies                          |
+| `npm run dev`     | Start the development server                          |
+| `npm run build`   | Build the production version in the `dist/` directory |
+| `npm run preview` | Preview the production build locally                  |
 
+## 📌 Project Status
 
-## 📌 Status projektu
+The project currently focuses on the **frontend implementation and user experience**.
 
-Projekt skupia się obecnie na warstwie frontendowej oraz doświadczeniu użytkownika.
+In the future, the application could be extended with a backend and database to support features such as dynamic product management and order processing.
 
-W przyszłości aplikację można rozbudować o backend i bazę danych, umożliwiając m.in. dynamiczne zarządzanie produktami i obsługę zamówień.
+## 🎯 Project Goal
 
-## 🎯 Cel projektu
-
-Projekt powstał jako praktyczne połączenie **tworzenia aplikacji w React**, projektowania interfejsu oraz tworzenia autorskich grafik.
+The project was created as a practical combination of **React development**, user interface design, and original graphic design.
 
 ---
 
-**Autor:** Agata Tryksza
+**Author:** ATryksza
 
-**Projekt:** Wisienka — Patisserie
+**Project:** Wisienka — Patisserie
 
-**Charakter projektu:** portfolio / projekt edukacyjny
+**Type:** Portfolio / Educational Project
